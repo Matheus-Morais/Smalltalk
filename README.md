@@ -55,4 +55,18 @@ whileTrue, whileFalse, timesRepeat, to do, to by do e array do:
  - Janelas de confirmação: self inform: 'Mensagem'.
  - Janelas de requesição: variavel:= FillInTheBlank request: 'Mensagem'.
  
- 
+ ---
+ ## Blocos
+ - Os blocos são objetos e podem ser atribuídos a uma variável.
+ - Eles são usados extensivamente nas estruturas condicionais e de repetição, em operações sobre coleções controle de exceções, na      criação e controle de processos e também no mecanismo de tratamento de erros.
+ - Blocos são parecidos com funções.
+ - Blocos são instancias da classe BlockClosur e que é subclass de Object.
+ - Para executar o conteúdo de um bloco precisamos explicitamente
+enviar uma mensagem.
+    * Estrutura
+      |bloco|
+      "o resultado deste exemplo sera o valor da ultima expressão: 22"
+       bloco := [ :x :y |
+           x + y.
+           ].
+       bloco value: 2 value: 2.
