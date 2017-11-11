@@ -1,0 +1,13 @@
+"fibonacci sem recursao"
+|fibonacci |
+fibonacci := [ :n |
+	a _ 0.
+	b _ 1.
+	
+	[b < n] whileTrue: [
+		b.
+		a := b.
+		Transcript show: (b := a+b).
+		]. 
+	].
+(fibonacci value: 4).

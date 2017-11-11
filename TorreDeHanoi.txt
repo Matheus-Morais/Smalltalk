@@ -1,0 +1,17 @@
+"Torre de hanoi"
+|hanoi|
+hanoi := [ :n |
+	a := 'Inicio'.
+	b := 'Auxiliar'.
+	c := 'Fim'.
+	n == 1 ifTrue:[
+		Transcript show: 'Move o disco ', n, ' de ', a, ' para ', c; cr. 
+		]
+	ifFalse:[
+		hanoi value: n-1.
+		Transcript show: 'Move o disco ', n, ' de ', a, ' para ', c; cr.
+		hanoi value: n-1.	
+		]
+	].
+
+hanoi value: 2.

@@ -1,0 +1,11 @@
+|fatorial|
+fatorial:= [:n | n > 1 
+	ifTrue:[ 
+		n * (fatorial value: n-1)
+		]
+	ifFalse: [
+		n
+		].
+	].
+
+Transcript show: (fatorial value: 100000).

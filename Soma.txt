@@ -1,0 +1,5 @@
+|soma|
+soma := [ :x :y :z :k |
+	(x + y + z) + k 
+	].
+Transcript show: (soma value: 5 value: 8 value: 5 value: 8).

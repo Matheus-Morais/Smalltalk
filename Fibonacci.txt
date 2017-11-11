@@ -1,0 +1,10 @@
+|fibonacci|
+fibonacci := [ :n |
+	n < 2 ifFalse: [
+		(fibonacci value: n -1 ) + (fibonacci value: n-2)
+		]
+	ifTrue: [
+		n
+		]
+	].
+Transcript show: (fibonacci value: 10).
