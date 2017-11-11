@@ -65,7 +65,6 @@ whileTrue, whileFalse, timesRepeat, to do, to by do e array do:
 enviar uma mensagem.
     * Estrutura
       |bloco|
-      "o resultado deste exemplo sera o valor da ultima expressão: 22"
        bloco := [ :x :y |
            x + y.
            ].
